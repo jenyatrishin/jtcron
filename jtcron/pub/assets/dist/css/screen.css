@@ -1,0 +1,48 @@
+.jtcron_app {
+    margin-top: 25px;
+}
+.jobs_table tr {
+    cursor: pointer;
+}
+.jobs_table tr.success {
+    background: #98FB98;
+}
+.jobs_table tr.failed {
+    background: #8B0000;
+}
+.jobs_table tr.failed td {
+	color: #ffffff;
+}
+.buttons {
+	margin-top: 25px;
+}
+.buttons button {
+	margin-right: 15px;
+}
+.jt-pagination {
+	display: inline-block;
+	margin-left: 25px;
+	vertical-align: top;
+}
+.pager-links {
+	display: inline-block;
+}
+.pager-links a {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 14px;
+}
+
+.pager-links a.active {
+	text-decoration: none;
+	color: #000000;
+}
+code {
+	line-height: 20px;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    color: #2b2b2c;
+    margin: 0 0 20px;
+	display: block;
+}

@@ -1,0 +1,20 @@
+shellfile: jtcron
+publicconfig:
+  folder: etc
+  file: crontab.yaml
+logfile: debug.log
+adminmenu:
+  pages:
+    main:
+      pageTitle: 'Cron list'
+      menuTitle: 'Cron jobs'
+      menuSlug: 'cronjob'
+      class: \JtCron\Controller\Admin\Index
+      method: execute
+    info:
+      pageTitle: 'Info'
+      menuTitle: 'Info'
+      menuSlug: 'cronjob_info'
+      class: \JtCron\Controller\Admin\Info
+      method: execute    
+      parent: 'cronjob'

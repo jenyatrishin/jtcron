@@ -1,0 +1,33 @@
+
+<div class="wrap">
+   <h1>Cron configuration</h1>
+   <p>Plugin provides functionality to add cron tasks from your plugin or theme code. After activation you'll see new file <b>jtcron</b> within site root directory and new folder <b>etc</b> within wp-content folder.</p>
+   <p>There's file crontab.yaml within etc folder. You can add your new cron tasks in this file. Your tasks should be added in one format like below:</p>
+   <p>
+   <pre>
+   <code style="color:#5d5d60">
+	jobs:<br>
+	  testjob:<br>
+		schedule: '* * * * *'<br>
+		instance: \JtCron\Job\Text<br>
+		method: execute<br>
+	</code>	</pre>
+   </p>
+   <p><pre>
+   <code style="color:#5d5d60">
+	jobs:<br>
+	  testjob:<br>
+		schedule: '* * * * *'<br>
+		function: my_awesome_function<br>
+	</code></pre>
+   </p>
+   <p>Your class or function can be defined in any place of code.</p>
+   <p>Also you should config server crontab for running file <b>jtcron</b> from your root folder for every minute. You can do it with code like below:</p>
+   <p>
+		<code style="color:#5d5d60">
+* * * * * /usr/bin/php /var/www/html/wordpress/jtcron
+		</code>
+
+   </p>
+   <p>Enjoy your cron tasks!</p>
+</div>

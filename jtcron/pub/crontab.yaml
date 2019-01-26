@@ -1,0 +1,5 @@
+jobs:
+  testjob:
+    schedule: '59 * * * *'
+    instance: \JtCron\Job\Text
+    method: execute
