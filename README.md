@@ -10,18 +10,18 @@ New folder etc will be added to your wp-content folder
 There's file crontab.yaml within etc folder. You can add your new cron tasks in this file. Your tasks should be added in one format like below:
 
 ```yaml
-	jobs:
-	  testjob:
-		schedule: '* * * * *'
-		instance: \JtCron\Job\Text
-		method: execute
+jobs:
+  testjob:
+    schedule: '59 * * * *'
+    instance: \JtCron\Job\Text
+    method: execute
 ```
 or with function
 ```yaml
-	jobs:
-	  testjob:
-		schedule: '* * * * *'
-		function: my_awesome_function
+jobs:
+  testjob:
+    schedule: '59 * * * *'
+    function: my_awesome_function
 ```
 Also you should config server crontab for running file <b>jtcron</b> from your root folder for every minute. You can do it with code like below:
 
